@@ -27,7 +27,7 @@ public class RFIBANHelper: NSObject {
   static let uppercaseCharacters = "^([A-Z])*$"
 
   static let startBytesRegex = "^([A-Z]{2}[0-9]{2})$"
-  static let countryModels = CountryModels()
+  static public let countryModels = CountryModels()
 
   public static func createIBAN(_ account: String, bic: String? = nil, countryCode: String? = nil) -> String {
     countryModels.loadModels()

@@ -9,7 +9,7 @@
 import Foundation
 
 public class CountryModels {
-    private var models = [String: CountryModel]()
+    public var models = [String: CountryModel]()
     
     public func loadModels() {
         do {
